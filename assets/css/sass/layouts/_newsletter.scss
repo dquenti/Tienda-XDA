@@ -1,0 +1,63 @@
+
+.newsletter{
+    background-color: $black;
+    color: $white;
+    width: 40%;
+    left: 0;
+    height: 250px;
+    position: relative;
+    top: -250px;
+    padding-left: 50px;
+    padding-right: 110px;
+
+    &__title{
+        font-size: $xx-large;
+        font-family: $ostandartbold bold;
+        padding-top: 30px;
+
+    }
+    &__subtitle{
+        font-size: $medium;
+        font-family: $ostandartbold;
+        padding-top: 30px;
+    
+    
+    }
+
+}
+
+@media only screen and (min-width:321px) and (max-width:768px){
+    .newsletter {
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 5/6;
+        height: 200px;
+        width: 70%;
+        left: 15%;
+        position: relative;
+        top: 10px;
+        padding-left: 0px;
+        padding-right:0px;
+    
+        &__title{
+            font-size: $xx-large;
+            font-family: $ostandartbold bold;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+    
+        }
+        &__subtitle{
+            font-size: $medium;
+            font-family: $ostandartbold;
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-right: 15px;
+        
+        
+        }
+    }
+
+
+
+  }

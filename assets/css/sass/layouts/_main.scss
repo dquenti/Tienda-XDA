@@ -1,0 +1,77 @@
+
+.content{
+    background-color: $white;
+    width: 40%;
+    left: 0;
+    height: 480px;
+    display: flex;
+
+.blog{
+    display: inline;
+
+    &__header{
+        font-family: $ostandartbold bold;
+        font-size: $xxx-large;
+        color: $black;
+        padding-top: 50px;
+        padding-left: 130px;
+        padding-right: 40px;
+    }
+    
+    &__body{
+        font-family: $raleway;
+        font-size: $small;
+        text-align: left;
+        padding-top: 30px;
+        padding-left: 130px;
+        padding-right: 140px;
+        
+    }
+    
+    &__button{
+        font-family: $raleway bold;
+        font-size: $x-small;
+        margin-top: 30px;
+    
+    }
+    
+}
+}   
+@media only screen and (min-width:321px) and (max-width:768px){
+    .content{
+        background-color: $white;
+        width: 90%;
+        left: 0;
+        height: 380px;
+        display: grid;
+    }
+    
+    .blog{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+        
+          
+        &__header{
+            font-family: $ostandartbold bold;
+            font-size: $xxx-large;
+            color: $black;
+        }
+        
+        &__body{
+            font-family: $raleway;
+            font-size: $small;
+            text-align: left;
+
+            
+        }
+        
+        &__button{
+            font-family: $raleway bold;
+            font-size: $x-small;
+            margin-top: 5px;
+        
+        }
+        
+    }
+}
